@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Navbar */
+.__nav{
+  background-color: transparent;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav__button {
+  margin-left: 1rem;
+}
+
+.nav__item .nav__button {
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  margin-left: 2rem;
+}
+
+form {
+  margin-right: 10rem;
+  color: #ffff;
+  display: flex;
+  width: 20rem;
+  border: 1px solid white;
+  border-radius: 2rem;
+  position: relative;
+}
+
+input[type="search"] {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  color: white;
+}
+
+input[type="search"]::placeholder {
+  color: #ffff;
+}
+
+.icon__search {
+  position: absolute;
+  right: 1rem;
+  top: 0.75rem;
+}
+
+form:hover {
+  border-color: red;
+}
+
+/* Jumbotron */
+.jumbotron {
+  margin-top: -60px;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.bg__jumbotron {
+  background-color: black;
+}
+
+.jumbotron__detail {
+  margin-top: -80px;
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.jumbotron__search {
+  position: relative;
+}
+
+.search__detail {
+  position: absolute;
+}
+
+.detail__text  {
+  position: absolute;
+  left: 75px;
+  top: 14rem;
+  color: white;
+  width: 50%;
+  line-height: 30px;
+}
+
+.bg-carousel {
+  height: 100vh;
+  background-color: black;
+}
+
+.carousel__text {
+  position: absolute;
+  line-height: 30px;
+  width: 50%;
+}
+
+/* Card */
+.movie__card {
+  margin-bottom: 5rem;
+}
+
+.img__card {
+  border-radius: 0.75rem;
+  display: block;
+  overflow: hidden;
+}
+
+.card__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.all__movies {
+  margin-top: 0.5rem;
+  color: #f33f3f;
+}
+
+.all__movies:hover {
+  color: #fa5f5f;
+  cursor: pointer;
+}
+
+.description {
+  position: absolute;
+  border-radius: 0.75rem;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  padding: 16rem 15px 0 15px;
+  font-size: 18px;
+  color: #fff;
+  background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+  opacity: 0;
+}
+
+.description:hover {
+  opacity: 1;
+}
+
+.description > * {
+  transform: translateY(30px);
+  transition: transform 0.4s;
+}
+
+.description:hover > * {
+  transform: translateY(0);
+}
+
+.description__1 {
+  margin-top: 1.5rem;
+}
+
+.btn__category {
+  width: 10rem;
+  border-radius: 2rem;
+  padding: 0.5rem 0;
+  background-color: #f33f3f;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.btn__categoryClick {
+  width: 10rem;
+  border-radius: 2rem;
+  padding: 0.5rem 0;
+  background-color: red;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
+}
+
+.movie__cardall {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 30px;
+  margin-bottom: 2rem;
+}
+
+.form__register {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  border: none;
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+}
+
